@@ -8,6 +8,8 @@ uts/verification-key.json
 - this prove later can make file proof.json & public.json : npx snarkjs groth16 prove outputs/[circuit-name]-final.zkey outputs/witness.wtns outputs/proof.json outputs/public.json
 - verify : npx snarkjs groth16 verify outputs/verification-key.json outputs/public.json outputs/proof.json
 
+- setup verifier.sol : npx snarkjs zkey export solidityverifier outputs/merkleProof-final.zkey verifier.sol
+
 | Konsep   | Analogi                                     |
 | -------- | ------------------------------------------- |
 | Circom   | desain uang (gambar, angka, tanda tangan)   |
