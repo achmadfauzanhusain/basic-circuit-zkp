@@ -9,8 +9,7 @@ uts/verification-key.json
 - verify : npx snarkjs groth16 verify outputs/verification-key.json outputs/public.json outputs/proof.json
 
 - setup verifier.sol : npx snarkjs zkey export solidityverifier outputs/merkleProof-final.zkey verifier.sol
-
-- verifyProof : npx snarkjs zkey export soliditycalldata outputs/public.json outputs/proof.json
+- verifyProof : npx snarkjs zkey export soliditycalldata outputs/public.json outputs/proof.json > calldata.txt
 
 | Konsep   | Analogi                                     |
 | -------- | ------------------------------------------- |
