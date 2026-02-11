@@ -10,6 +10,8 @@ uts/verification-key.json
 
 - setup verifier.sol : npx snarkjs zkey export solidityverifier outputs/merkleProof-final.zkey verifier.sol
 
+- verifyProof : npx snarkjs zkey export soliditycalldata outputs/public.json outputs/proof.json
+
 | Konsep   | Analogi                                     |
 | -------- | ------------------------------------------- |
 | Circom   | desain uang (gambar, angka, tanda tangan)   |
